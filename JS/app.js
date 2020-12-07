@@ -1,7 +1,7 @@
 'use strict';
 
 //global variables
-let containerParent = document.getElementById('container-parent');
+// let containerParent = document.getElementById('container-parent');
 let seattleList = document.getElementById('seattle');
 let tokyoList = document.getElementById('tokyo');
 let dubaiList = document.getElementById('dubai');
