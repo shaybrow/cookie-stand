@@ -10,9 +10,11 @@ I built an web site for users to learn more about me.
 
 * [Random Numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
-* [I borrowed this readme template from] (https://github.com/codefellows/seattle-201d70/blob/master/class-02/README-template.md)
+* [I used this as a reference for DOM integration] (https://github.com/codefellows/seattle-201d70/blob/master/class-06/demo/inclass-demo-pheasants/js/app.js)
 
-* [Random number help](https://www.w3schools.com/js/js_random.asp)
+* [Google fonts](https://developers.google.com/fonts/docs/getting_started)
+
+* [Nerko Font](https://fonts.google.com/specimen/Nerko+One?sidebar.open=true&selection.family=Nerko+One)
 
 ### Reflections and Comments
 

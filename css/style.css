@@ -1,4 +1,35 @@
 body {
-  background-color: blue;
+  background-color: salmon;
+color: black;
+width: 80%;
+}
+h1{
+  text-align: center;
+  font-size: 4em;
+  
+}
+nav{
+  background-color: rgb(80, 8, 0);
+  color: blanchedalmond;
+  padding: 20px;
+border: medium solid gray;
+margin: auto;
+}
+nav a{
+  color: blanchedalmond;
+  padding: 40px;
 
+}
+ul{
+  list-style: circle;
+  list-style-position: inside;
+  font-size: 2em; 
+}
+li{
+list-style-type: disc;
+font-size: 0.5em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+mark{
+  font-family: 'Nerko One', cursive;
 }
