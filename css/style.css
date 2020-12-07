@@ -8,6 +8,9 @@ h1{
   font-size: 4em;
   
 }
+h3{
+  text-align: center;
+}
 nav{
   background-color: rgb(80, 8, 0);
   color: blanchedalmond;
@@ -17,8 +20,11 @@ margin: auto;
 }
 nav a{
   color: blanchedalmond;
-  padding: 40px;
+  padding: 10%;
 
+}
+p {
+  font-family: serif;
 }
 ul{
   list-style: circle;
@@ -29,7 +35,9 @@ li{
 list-style-type: disc;
 font-size: 0.5em;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* this will be used for data */
 }
 mark{
   font-family: 'Nerko One', cursive;
+  /* this will be used for highlighting */
 }
