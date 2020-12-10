@@ -7,6 +7,7 @@ let storeList = ['Stores'];
 let stores = [];
 let hourBought = [];
 let storeTable = document.getElementById('table');
+let tFoot = document.createElement('tfoot');
 
 function BuildStore(loc, minCust, maxCust, avgCookie,) {
   this.location = loc;
@@ -22,11 +23,12 @@ function BuildStore(loc, minCust, maxCust, avgCookie,) {
 }
 
 BuildStore.prototype.randomNum = function () {
-  return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  return Math.ceil(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
 }
 
 BuildStore.prototype.cookiesHour = function () {
-  let bought = Math.round(this.randomNum() * this.avgCookie);
+  let bought = Math.ceil(this.randomNum() * this.avgCookie);
+  console.log(bought);
   this.cookiesBought.push(bought);
   this.boughtTotal += bought;
   return bought;
@@ -80,7 +82,7 @@ function createTHead() {
 }
 
 function createTFoot() {
-  let tFoot = document.createElement('tfoot');
+  tFoot = document.createElement('tfoot');
   storeTable.appendChild(tFoot);
   let tr = document.createElement('tr');
   tFoot.appendChild(tr);
@@ -112,3 +114,54 @@ function renderStores() {
 renderStores();
 createTHead();
 createTFoot();
+
+
+
+
+// get container element by id
+
+let form = document.getElementById('container-parent');
+
+// 2 add event listener
+// form.addEventListener('submit', submitStoreInfo);
+
+// 3 event handler function
+
+function submitStoreInfo(event) {
+  //THIS LINE OF CODE IS MANDATORY FOR SUBMIT FUNCTIONS
+  event.preventDefault();
+  // SERIOUSLY MAKE SURE YOU HAVE THIS LINE^
+
+  let storeName = event.target.storename.value;
+  let minCustomer = event.target.mincust.value;
+  let maxCustomer = event.target.maxcust.value;
+  let averageCookies = event.target.avgcookie.value;
+  new BuildStore(storeName, minCustomer, maxCustomer, averageCookies);
+  let storeNumber = stores.length - 1;
+  stores[storeNumber].renderTable();
+  storeTable.removeChild(tFoot);
+  createTFoot();
+
+  //render store
+  //render 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form.addEventListener('submit', submitStoreInfo);
+
