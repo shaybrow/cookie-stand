@@ -20,7 +20,7 @@ I built an web site for users to learn more about me.
 
 I switched some stuff up from code review on 12.3
 
-I felt confident completing this entire assignment with the exception of the stretch goals. 
+I felt confident completing this entire assignment with the exception of the stretch goals. 
 
 I know I still have a long way to go to be able to flawlessly implement logic and that will take time and practice. I've been reminded how frustrating it can be to force an image to stay exactly the way that you want it, where you want it and don't think I'll ever become a master at it.
 
