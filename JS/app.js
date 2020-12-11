@@ -3,11 +3,15 @@
 //global variables
 let containerParent = document.getElementById('container-parent');
 let hours = ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM'];
-let storeList = ['Stores'];
+
 let stores = [];
 let hourBought = [];
 let storeTable = document.getElementById('table');
 let tFoot = document.createElement('tfoot');
+let tHead = document.createElement('thead');
+let tr = document.createElement('tr');
+let th = document.createElement('th');
+let td = document.createElement('td');
 
 function BuildStore(loc, minCust, maxCust, avgCookie,) {
   this.location = loc;
@@ -17,31 +21,35 @@ function BuildStore(loc, minCust, maxCust, avgCookie,) {
   this.dailyTotal = 0;
   this.cookiesBought = [];
   this.boughtTotal = 0;
-  storeList.push(loc);
   stores.push(this);
 
 }
 
+function appendDOM(destination, element) {
+
+  element;
+  destination.appendChild(element);
+
+}
 BuildStore.prototype.randomNum = function () {
   return Math.ceil(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
 }
 
 BuildStore.prototype.cookiesHour = function () {
   let bought = Math.ceil(this.randomNum() * this.avgCookie);
-  console.log(bought);
   this.cookiesBought.push(bought);
   this.boughtTotal += bought;
   return bought;
 }
 
 BuildStore.prototype.renderTable = function () {
-  let parentElement = document.getElementById('table');
   let tr = document.createElement('tr');
   storeTable.appendChild(tr);
 
   let th = document.createElement('th');
   th.textContent = this.location;
   tr.appendChild(th);
+
 
   for (let i = 0; i < hours.length; i++) {
     let td = document.createElement('td');
@@ -82,7 +90,7 @@ function createTHead() {
 }
 
 function createTFoot() {
-  tFoot = document.createElement('tfoot');
+  // tFoot = document.createElement('tfoot');
   storeTable.appendChild(tFoot);
   let tr = document.createElement('tr');
   tFoot.appendChild(tr);

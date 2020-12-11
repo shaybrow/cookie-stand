@@ -27,3 +27,7 @@ I added eventhandlers.js during lecture on 12.10
 ### Collaborators
 
 I worked with Jason on 12.8.20 and it helped me dry out my code
+
+Worked with Jason D on 12.10 creating the appendDOM function. We spent an hour trying to write a function to skip the dom process but ultimately failed.
+
+
