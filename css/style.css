@@ -21,6 +21,9 @@ body {
   h3{
     font-size: 25px;
   }
+  h3:first-child{
+    margin-top: 20px;
+  }
   h2{
     text-align: right; 
   font-size: 2em;
@@ -84,6 +87,8 @@ div img{
 }
 #fish{
   margin-top:0px;
+  margin-left:auto;
+  margin-right: auto;
 }
 footer{
   margin:auto;
@@ -104,6 +109,8 @@ footer ul{
   table{
     border: 2px solid black;
   background-color: white;
+  margin-left: auto;
+margin-right: auto;
   }
   
   th {
@@ -122,8 +129,17 @@ footer ul{
     font-family: 'Nerko One', cursive;
     /* this will be used for highlighting */
   }
-
-
+  form{
+    margin-top:30px;
+  border: 2px solid black;
+width: 812px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+}
+legend{
+  font-weight: bold;
+}
 
 
 
