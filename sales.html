@@ -23,18 +23,18 @@
     <container>
       <form id="form">
         <fieldset>
-          <legend>Build your own store</legend>
+          <legend>BUILD YOUR OWN STORE</legend>
           <label>Enter name or location of the store:
-            <input type="text" name="storename">
+            <input type="text" name="storename" required>
           </label>
           <label>Enter average cookies bought per customer:
-            <input type="number" step="0.01" name="avgcookie">
+            <input type="number" step="0.01" name="avgcookie" required>
           </label>
           <label>Enter minimum customers per hour:
-            <input type="number" name="mincust">
+            <input type="number" name="mincust" required>
           </label>
           <label>Enter maximum customers per hour:
-            <input type="number" name="maxcust">
+            <input type="number" name="maxcust" required>
           </label>
           <button type="submit">FULL SEND</button>
         </fieldset>
